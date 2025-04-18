@@ -162,7 +162,7 @@ rmw_test_isolation_start_default()
   }
 
   uint16_t slot;
-  g_lock = port_lock_init(32768, 32896, &slot);
+  g_lock = port_lock_init(32769, 32870, &slot);
   if (INVALID_PORT_LOCK == g_lock) {
     fprintf(stderr, "Failed to acquire port lock\n");
     return RMW_RET_ERROR;
@@ -170,13 +170,6 @@ rmw_test_isolation_start_default()
 
   // Avoid ROS_DOMAIN_ID=0 entirely
   slot += 1;
-
-  if (!rcutils_set_env("ROS_AUTOMATIC_DISCOVERY_RANGE", "LOCALHOST")) {
-    fprintf(stderr, "Failed to update ROS_AUTOMATIC_DISCOVERY_RANGE\n");
-    port_lock_fini(g_lock);
-    g_lock = INVALID_PORT_LOCK;
-    return RMW_RET_ERROR;
-  }
 
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   char *env_val = rcutils_format_string(allocator, "%d", slot);
@@ -190,9 +183,6 @@ rmw_test_isolation_start_default()
   if (!rcutils_set_env("ROS_DOMAIN_ID", env_val)) {
     fprintf(stderr, "Failed to update ROS_DOMAIN_ID\n");
     allocator.deallocate(env_val, &allocator.state);
-    if (!rcutils_set_env("ROS_AUTOMATIC_DISCOVERY_RANGE", NULL)) {
-      fprintf(stderr, "Failed to clear ROS_AUTOMATIC_DISCOVERY_RANGE\n");
-    }
     port_lock_fini(g_lock);
     g_lock = INVALID_PORT_LOCK;
     return RMW_RET_ERROR;
@@ -208,10 +198,6 @@ rmw_test_isolation_stop_default()
 {
   if (!rcutils_set_env("ROS_DOMAIN_ID", NULL)) {
     fprintf(stderr, "Failed to clear ROS_DOMAIN_ID\n");
-  }
-
-  if (!rcutils_set_env("ROS_AUTOMATIC_DISCOVERY_RANGE", NULL)) {
-    fprintf(stderr, "Failed to clear ROS_AUTOMATIC_DISCOVERY_RANGE\n");
   }
 
   port_lock_fini(g_lock);
