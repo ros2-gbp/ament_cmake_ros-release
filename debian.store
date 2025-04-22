@@ -1,1 +1,1 @@
-{"base": "5cf05e8a05c1", "parent": "debian/rolling/domain_coordinator", "previous": "ab8fe8f6142e", "trim": "", "trimbase": ""}
+{"base": "d6ddbfc78f92", "parent": "debian/kilted/domain_coordinator", "previous": "bc15cab695a3", "trim": "", "trimbase": ""}
