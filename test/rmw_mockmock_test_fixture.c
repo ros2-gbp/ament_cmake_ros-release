@@ -12,24 +12,31 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef RMW_TEST_FIXTURE_DEFAULT__RMW_TEST_FIXTURE_DEFAULT_H_
-#define RMW_TEST_FIXTURE_DEFAULT__RMW_TEST_FIXTURE_DEFAULT_H_
+#include <rmw_test_fixture/rmw_test_fixture.h>
 
-#ifdef __cplusplus
-extern "C"
-{
-#endif
-
+#include <rcutils/env.h>
 #include <rmw/types.h>
 
 rmw_ret_t
-rmw_test_isolation_start_default(void);
+rmw_test_isolation_start(void)
+{
+  if (!rcutils_set_env("MOCK_FIXTURE_START_CALLED", "1")) {
+    return RMW_RET_ERROR;
+  }
+
+  return RMW_RET_OK;
+}
 
 rmw_ret_t
-rmw_test_isolation_stop_default(void);
+rmw_test_isolation_stop(void)
+{
+  if (!rcutils_set_env("MOCK_FIXTURE_STOP_CALLED", "1")) {
+    return RMW_RET_ERROR;
+  }
 
-#ifdef __cplusplus
+  if (!rcutils_set_env("MOCK_FIXTURE_START_CALLED", NULL)) {
+    return RMW_RET_ERROR;
+  }
+
+  return RMW_RET_OK;
 }
-#endif
-
-#endif  // RMW_TEST_FIXTURE_DEFAULT__RMW_TEST_FIXTURE_DEFAULT_H_
