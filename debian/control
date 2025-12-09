@@ -1,0 +1,12 @@
+Source: ros-kilted-rmw-test-fixture-implementation
+Section: misc
+Priority: optional
+Maintainer: Brandon Ong <brandon@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), python3-dev, ros-kilted-ament-cmake, ros-kilted-ament-cmake-gtest <!nocheck>, ros-kilted-ament-cmake-pytest <!nocheck>, ros-kilted-ament-cmake-ros-core, ros-kilted-ament-lint-auto <!nocheck>, ros-kilted-ament-lint-common <!nocheck>, ros-kilted-rcpputils, ros-kilted-rcutils, ros-kilted-rmw, ros-kilted-rmw-implementation, ros-kilted-rmw-implementation-cmake, ros-kilted-rmw-test-fixture, ros-kilted-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kilted-rmw-test-fixture-implementation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kilted-rcpputils, ros-kilted-rcutils, ros-kilted-rmw, ros-kilted-rmw-test-fixture, ros-kilted-rpyutils, ros-kilted-ros-workspace
+Description: Tools for isolating ROS environments at the RMW layer
