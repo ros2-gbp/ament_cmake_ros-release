@@ -1,0 +1,70 @@
+ros-rolling-ament-cmake-ros-core (0.15.6-1bookworm) bookworm; urgency=high
+
+
+
+ -- Brandon Ong <brandon@openrobotics.org>  Mon, 08 Dec 2025 23:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.15.5-1bookworm) bookworm; urgency=high
+
+
+
+ -- Brandon Ong <brandon@openrobotics.org>  Thu, 27 Nov 2025 23:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.15.4-1bookworm) bookworm; urgency=high
+
+
+
+ -- Brandon Ong <brandon@openrobotics.org>  Thu, 30 Oct 2025 23:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.15.3-1bookworm) bookworm; urgency=high
+
+
+
+ -- Brandon Ong <brandon@openrobotics.org>  Thu, 16 Oct 2025 22:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.15.2-1bookworm) bookworm; urgency=high
+
+  * fix cmake deprecation (#47 <https://github.com/ros2/ament_cmake_ros/issues/47>)
+  * Contributors: mosfet80
+
+ -- Brandon Ong <brandon@openrobotics.org>  Mon, 28 Jul 2025 22:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.15.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- Brandon Ong <brandon@openrobotics.org>  Sun, 29 Jun 2025 22:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.15.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- Brandon Ong <brandon@openrobotics.org>  Wed, 23 Apr 2025 22:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.14.3-1bookworm) bookworm; urgency=high
+
+  * Add missing build_export_depend on ament_cmake_libraries (#37 <https://github.com/ros2/ament_cmake_ros/issues/37>)
+  * Contributors: Scott K Logan
+
+ -- Brandon Ong <brandon@openrobotics.org>  Thu, 17 Apr 2025 22:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.14.2-1bookworm) bookworm; urgency=high
+
+
+
+ -- Brandon Ong <brandon@openrobotics.org>  Thu, 17 Apr 2025 22:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.14.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- Brandon Ong <brandon@openrobotics.org>  Tue, 01 Apr 2025 22:00:00 -0000
+
+ros-rolling-ament-cmake-ros-core (0.14.0-1bookworm) bookworm; urgency=high
+
+  * Split generic parts of ament_cmake_ros into _core package (#20 <https://github.com/ros2/ament_cmake_ros/issues/20>)
+  * Contributors: Scott K Logan
+
+ -- Brandon Ong <brandon@openrobotics.org>  Tue, 18 Mar 2025 23:00:00 -0000
+
+
