@@ -2,23 +2,43 @@
 Changelog for package rmw_test_fixture_implementation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.14.6 (2025-11-28)
+0.15.6 (2025-12-09)
 -------------------
-* Restore ROS_DOMAIN_ID after isolation is finished (`#58 <https://github.com/ros2/ament_cmake_ros/issues/58>`_) (`#59 <https://github.com/ros2/ament_cmake_ros/issues/59>`_)
-* Contributors: mergify[bot]
+* Drop dependency group dependency on test fixtures (`#60 <https://github.com/ros2/ament_cmake_ros/issues/60>`_)
+* Contributors: Scott K Logan
 
-0.14.5 (2025-10-31)
+0.15.5 (2025-11-28)
 -------------------
-* default to c++17 due to use of newer methods on std::map (`#57 <https://github.com/ros2/ament_cmake_ros/issues/57>`_)
+* Restore ROS_DOMAIN_ID after isolation is finished (`#58 <https://github.com/ros2/ament_cmake_ros/issues/58>`_)
+* Contributors: Scott K Logan
+
+0.15.4 (2025-10-31)
+-------------------
+* default to c++17 due to use of newer methods on std::map (`#55 <https://github.com/ros2/ament_cmake_ros/issues/55>`_)
 * Contributors: William Woodall
 
-0.14.4 (2025-10-17)
+0.15.3 (2025-10-17)
 -------------------
-* Copy all environment variables explicitly (backport `#43 <https://github.com/ros2/ament_cmake_ros/issues/43>`_) (`#52 <https://github.com/ros2/ament_cmake_ros/issues/52>`_)
-* fix cmake deprecation (`#47 <https://github.com/ros2/ament_cmake_ros/issues/47>`_) (`#48 <https://github.com/ros2/ament_cmake_ros/issues/48>`_)
-* Split the generator expression for each library (`#36 <https://github.com/ros2/ament_cmake_ros/issues/36>`_) (`#38 <https://github.com/ros2/ament_cmake_ros/issues/38>`_)
+
+0.15.2 (2025-07-29)
+-------------------
+* fix cmake deprecation (`#47 <https://github.com/ros2/ament_cmake_ros/issues/47>`_)
+* Contributors: mosfet80
+
+0.15.1 (2025-06-30)
+-------------------
+* On start-after-stop, re-check RMW_IMPLEMENTATION for changes (`#46 <https://github.com/ros2/ament_cmake_ros/issues/46>`_)
+* Choose random domain IDs during default RMW isolation (`#39 <https://github.com/ros2/ament_cmake_ros/issues/39>`_)
+* Ignore SIGINT *after* child process has been spawned (`#45 <https://github.com/ros2/ament_cmake_ros/issues/45>`_)
+* Add some smoke tests for rmw_test_fixture_implementation (`#42 <https://github.com/ros2/ament_cmake_ros/issues/42>`_)
+* Copy all environment variables explicitly (`#43 <https://github.com/ros2/ament_cmake_ros/issues/43>`_)
+* Split the generator expression for each library (`#36 <https://github.com/ros2/ament_cmake_ros/issues/36>`_)
+* Contributors: Scott K Logan, Tanishq Chaudhary
+
+0.15.0 (2025-04-24)
+-------------------
 * Removed clang warnings (`#34 <https://github.com/ros2/ament_cmake_ros/issues/34>`_)
-* Contributors: Alejandro Hernández Cordero, mergify[bot]
+* Contributors: Alejandro Hernández Cordero
 
 0.14.3 (2025-04-18)
 -------------------
