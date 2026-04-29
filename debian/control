@@ -1,0 +1,12 @@
+Source: ros-lyrical-rmw-test-fixture-implementation
+Section: misc
+Priority: optional
+Maintainer: Brandon Ong <brandon@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), python3-dev, ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-gtest <!nocheck>, ros-lyrical-ament-cmake-pytest <!nocheck>, ros-lyrical-ament-cmake-ros-core, ros-lyrical-ament-lint-auto <!nocheck>, ros-lyrical-ament-lint-common <!nocheck>, ros-lyrical-rcpputils, ros-lyrical-rcutils, ros-lyrical-rmw, ros-lyrical-rmw-implementation, ros-lyrical-rmw-implementation-cmake, ros-lyrical-rmw-test-fixture, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/rmw_test_fixture_implementation/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-rmw-test-fixture-implementation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-rcpputils, ros-lyrical-rcutils, ros-lyrical-rmw, ros-lyrical-rmw-test-fixture, ros-lyrical-rpyutils, ros-lyrical-ros-workspace
+Description: Tools for isolating ROS environments at the RMW layer
