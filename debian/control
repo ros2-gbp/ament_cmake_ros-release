@@ -1,0 +1,12 @@
+Source: ros-lyrical-ament-cmake-ros-core
+Section: misc
+Priority: optional
+Maintainer: Brandon Ong <brandon@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-cmake-core, ros-lyrical-ament-cmake-export-dependencies, ros-lyrical-ament-cmake-export-targets, ros-lyrical-ament-lint-auto <!nocheck>, ros-lyrical-ament-lint-common <!nocheck>, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/ament_cmake_ros_core/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-ament-cmake-ros-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-ament-cmake-core, ros-lyrical-ament-cmake-libraries, ros-lyrical-ros-workspace
+Description: Core ROS specific CMake bits in the ament buildsystem.
