@@ -2,6 +2,9 @@
 Changelog for package ament_cmake_ros_core
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.15.8 (2026-04-30)
+-------------------
+
 0.15.7 (2026-04-20)
 -------------------
 * Add `ament_ros_defaults` target (`#62 <https://github.com/ros2/ament_cmake_ros/issues/62>`_)
