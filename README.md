@@ -1,3 +1,31 @@
+## ament_cmake_ros (rolling) - 0.16.0-1
+
+The packages in the `ament_cmake_ros` repository were released into the `rolling` distro by running `/usr/local/google/home/sloretz/projects/lyrical/env3/bin/bloom-release -r rolling -t rolling ament_cmake_ros` on `Thu, 07 May 2026 18:12:24 -0000`
+
+These packages were released:
+- `ament_cmake_ros`
+- `ament_cmake_ros_core`
+- `domain_coordinator`
+- `rmw_test_fixture`
+- `rmw_test_fixture_implementation`
+
+Version of package(s) in repository `ament_cmake_ros`:
+
+- upstream repository: https://github.com/ros2/ament_cmake_ros.git
+- release repository: https://github.com/ros2-gbp/ament_cmake_ros-release.git
+- rosdistro version: `0.15.7-2`
+- old version: `0.15.7-2`
+- new version: `0.16.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## ament_cmake_ros (lyrical) - 0.15.8-1
 
 The packages in the `ament_cmake_ros` repository were released into the `lyrical` distro by running `/usr/local/google/home/sloretz/projects/lyrical/env3/bin/bloom-release ament_cmake_ros -r lyrical -t lyrical` on `Thu, 30 Apr 2026 16:00:53 -0000`
