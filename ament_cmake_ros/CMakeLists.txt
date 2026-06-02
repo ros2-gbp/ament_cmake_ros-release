@@ -1,11 +1,10 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.5)
 
 project(ament_cmake_ros NONE)
 
 find_package(ament_cmake REQUIRED)
 
 ament_export_dependencies(ament_cmake)
-ament_export_dependencies(ament_cmake_ros_core)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

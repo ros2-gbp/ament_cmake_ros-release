@@ -2,57 +2,7 @@
 Changelog for package ament_cmake_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.16.0 (2026-05-07)
--------------------
-
-0.15.7 (2026-04-20)
--------------------
-
-0.15.6 (2025-12-09)
--------------------
-
-0.15.5 (2025-11-28)
--------------------
-
-0.15.4 (2025-10-31)
--------------------
-
-0.15.3 (2025-10-17)
--------------------
-
-0.15.2 (2025-07-29)
--------------------
-* fix cmake deprecation (`#47 <https://github.com/ros2/ament_cmake_ros/issues/47>`_)
-* Contributors: mosfet80
-
-0.15.1 (2025-06-30)
--------------------
-
-0.15.0 (2025-04-24)
--------------------
-
-0.14.3 (2025-04-18)
--------------------
-
-0.14.2 (2025-04-18)
--------------------
-* Add ament_add_ros_isolated\_{gmock,gtest}_test macros (`#29 <https://github.com/ros2/ament_cmake_ros/issues/29>`_)
-* Switch from 'domain_coordinator' to 'rmw_test_fixture' (`#28 <https://github.com/ros2/ament_cmake_ros/issues/28>`_)
-* Add ament_add_ros_isolated_test function (`#27 <https://github.com/ros2/ament_cmake_ros/issues/27>`_)
-* Contributors: Scott K Logan
-
-0.14.1 (2025-04-02)
--------------------
-
-0.14.0 (2025-03-19)
--------------------
-* Split generic parts of ament_cmake_ros into _core package (`#20 <https://github.com/ros2/ament_cmake_ros/issues/20>`_)
-* Contributors: Scott K Logan
-
-0.13.1 (2024-11-20)
--------------------
-
-0.13.0 (2024-04-26)
+0.12.1 (2026-06-02)
 -------------------
 
 0.12.0 (2023-04-27)
