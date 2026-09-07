@@ -2,23 +2,7 @@
 Changelog for package ament_cmake_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.12.1 (2026-06-02)
--------------------
-
-0.12.0 (2023-04-27)
--------------------
-
-0.11.2 (2023-02-13)
--------------------
-* [rolling] Update maintainers - 2022-11-07 (`#16 <https://github.com/ros2/ament_cmake_ros/issues/16>`_)
-* Contributors: Audrow Nash
-
-0.11.1 (2022-09-13)
--------------------
-* Update maintainers (`#15 <https://github.com/ros2/ament_cmake_ros/issues/15>`_)
-* Contributors: methylDragon
-
-0.11.0 (2022-04-29)
+0.10.1 (2026-09-06)
 -------------------
 
 0.10.0 (2022-01-13)
