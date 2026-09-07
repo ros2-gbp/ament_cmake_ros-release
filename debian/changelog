@@ -1,0 +1,8 @@
+ros-humble-ament-cmake-ros-core (0.10.1-1jammy) jammy; urgency=high
+
+  * Split generic parts of ament_cmake_ros into _core package + Add ament_ros_defaults target (manual Humble backport of #20 <https://github.com/ros2/ament_cmake_ros/issues/20> and #62 <https://github.com/ros2/ament_cmake_ros/issues/62>) (#68 <https://github.com/ros2/ament_cmake_ros/issues/68>)
+  * Contributors: Martin Pecka
+
+ -- "Brandon Ong" <brandon@openrobotics.org>  Sun, 06 Sep 2026 07:00:00 -0000
+
+
