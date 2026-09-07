@@ -1,3 +1,29 @@
+## ament_cmake_ros (humble) - 0.10.1-1
+
+The packages in the `ament_cmake_ros` repository were released into the `humble` distro by running `/usr/bin/bloom-release --rosdistro humble ament_cmake_ros` on `Mon, 07 Sep 2026 17:53:53 -0000`
+
+These packages were released:
+- `ament_cmake_ros`
+- `ament_cmake_ros_core`
+- `domain_coordinator`
+
+Version of package(s) in repository `ament_cmake_ros`:
+
+- upstream repository: https://github.com/ros2/ament_cmake_ros.git
+- release repository: https://github.com/ros2-gbp/ament_cmake_ros-release.git
+- rosdistro version: `0.10.0-3`
+- old version: `0.10.0-3`
+- new version: `0.10.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## ament_cmake_ros (jazzy) - 0.12.1-1
 
 The packages in the `ament_cmake_ros` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --track jazzy --rosdistro jazzy ament_cmake_ros` on `Tue, 02 Jun 2026 04:50:41 -0000`
