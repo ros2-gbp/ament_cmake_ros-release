@@ -1,0 +1,12 @@
+Source: ros-jazzy-ament-cmake-ros-core
+Section: misc
+Priority: optional
+Maintainer: "Brandon Ong" <brandon@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake-core, ros-jazzy-ament-cmake-export-dependencies, ros-jazzy-ament-cmake-export-targets, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-ros-workspace
+Homepage: https://index.ros.org/p/ament_cmake_ros_core/#jazzy
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-ament-cmake-ros-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-ament-cmake-core, ros-jazzy-ros-workspace
+Description: Core ROS specific CMake bits in the ament buildsystem.
