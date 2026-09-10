@@ -1,4 +1,4 @@
-# Copyright 2026 Open Source Robotics Foundation, Inc.
+# Copyright 2019 Open Source Robotics Foundation, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_library(ament_ros_cxx_standard INTERFACE)
-target_compile_features(ament_ros_cxx_standard INTERFACE cxx_std_17)
+from ament_xmllint.main import main
+import pytest
 
-add_library(ament_ros_c_standard INTERFACE)
-target_compile_features(ament_ros_c_standard INTERFACE c_std_11)
 
-add_library(ament_ros_defaults INTERFACE)
-target_link_libraries(ament_ros_defaults INTERFACE
-  ament_ros_cxx_standard
-  ament_ros_c_standard
-)
+@pytest.mark.linter
+@pytest.mark.xmllint
+def test_xmllint():
+    rc = main(argv=[])
+    assert rc == 0, 'Found errors'

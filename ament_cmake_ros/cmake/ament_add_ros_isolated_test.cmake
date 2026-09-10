@@ -1,4 +1,4 @@
-# Copyright 2019 Apex.AI, Inc.
+# Copyright 2025 Open Source Robotics Foundation, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
 # limitations under the License.
 
 #
-# Add a gtest that runs with ROS_DOMAIN_ID isolation.
+# Add a test that runs with ROS communication isolation.
 # If no ROS_DOMAIN_ID is set, automatically select one not in use by another
 # isolated test before running the target test.
 # This will prevent tests running in parallel from interfering with
@@ -24,39 +24,13 @@
 # 2) Setting a ROS_DOMAIN_ID environment variable.
 #    This will cause the tests to use that ROS_DOMAIN_ID.
 #
-# Parameters are the same as ament_add_gtest
+# Parameters are the same as ament_add_test
 
-function(ament_add_ros_isolated_gtest target)
-
-  set(RUNNER "RUNNER" "${ament_cmake_ros_DIR}/run_test_isolated.py")
-
-  ament_add_gtest(
-    "${target}"
-    RUNNER "${RUNNER}"
-    ${ARGN}
-  )
-
-endfunction()
-
-#
-# Add an existing gtest that runs with ROS_DOMAIN_ID isolation.
-# If no ROS_DOMAIN_ID is set, automatically select one not in use by another
-# isolated test before running the target test.
-# This will prevent tests running in parallel from interfering with
-# one-another.
-#
-# This behavior can be disabled for debugging in two ways:
-# 1) Creating an environment variable called DISABLE_ROS_ISOLATION
-# 2) Setting a ROS_DOMAIN_ID environment variable.
-#    This will cause the tests to use that ROS_DOMAIN_ID.
-#
-# Parameters are the same as ament_add_gtest
-
-function(ament_add_ros_isolated_gtest_test target)
+function(ament_add_ros_isolated_test target)
 
   set(RUNNER "RUNNER" "${ament_cmake_ros_DIR}/run_test_isolated.py")
 
-  ament_add_gtest_test(
+  ament_add_test(
     "${target}"
     RUNNER "${RUNNER}"
     ${ARGN}
