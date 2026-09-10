@@ -20,6 +20,6 @@ target_compile_features(ament_ros_c_standard INTERFACE c_std_11)
 
 add_library(ament_ros_defaults INTERFACE)
 target_link_libraries(ament_ros_defaults INTERFACE
-  ament_ros_cxx_standard
-  ament_ros_c_standard
+    ament_ros_cxx_standard
+    ament_ros_c_standard
 )

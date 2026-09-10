@@ -13,6 +13,3 @@
 # limitations under the License.
 
 # generated from ament_cmake_ros_core/ament_cmake_ros_core-extras.cmake.in
-
-include("${ament_cmake_ros_core_DIR}/build_shared_libs.cmake")
-add_definitions(-DROS_PACKAGE_NAME=\"${PROJECT_NAME}\")
