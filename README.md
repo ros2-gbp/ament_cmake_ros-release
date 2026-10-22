@@ -1,3 +1,31 @@
+## ament_cmake_ros (rolling) - 0.16.1-1
+
+The packages in the `ament_cmake_ros` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling --track rolling ament_cmake_ros` on `Thu, 22 Oct 2026 09:48:24 -0000`
+
+These packages were released:
+- `ament_cmake_ros`
+- `ament_cmake_ros_core`
+- `domain_coordinator`
+- `rmw_test_fixture`
+- `rmw_test_fixture_implementation`
+
+Version of package(s) in repository `ament_cmake_ros`:
+
+- upstream repository: https://github.com/ros2/ament_cmake_ros.git
+- release repository: https://github.com/ros2-gbp/ament_cmake_ros-release.git
+- rosdistro version: `0.16.0-1`
+- old version: `0.16.0-1`
+- new version: `0.16.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.4`
+- catkin_pkg version: `1.1.1`
+- rosdep version: `0.27.0`
+- rosdistro version: `1.1.0`
+- vcstools version: `0.1.42`
+
+
 ## ament_cmake_ros (jazzy) - 0.12.2-1
 
 The packages in the `ament_cmake_ros` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --rosdistro jazzy --track jazzy ament_cmake_ros` on `Thu, 10 Sep 2026 11:25:34 -0000`
