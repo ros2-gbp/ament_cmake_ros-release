@@ -6,7 +6,7 @@ package_name = 'domain_coordinator'
 
 setup(
     name=package_name,
-    version='0.12.2',
+    version='0.16.1',
     packages=[
         'domain_coordinator',
     ],
@@ -26,7 +26,6 @@ setup(
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python',
         'Topic :: Software Development',
     ],
@@ -36,6 +35,10 @@ setup(
         'ament_cmake_gtest_isolated, and launch_testing to select unique ROS_DOMAIN_IDs '
         'that allow tests to run in parallel without interfering with each other.'
     ),
-    license='Apache License, Version 2.0',
-    tests_require=['pytest'],
+    license='Apache-2.0',
+    extras_require={
+        'test': [
+            'pytest',
+        ],
+    },
 )

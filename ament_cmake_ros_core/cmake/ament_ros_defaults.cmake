@@ -13,13 +13,13 @@
 # limitations under the License.
 
 add_library(ament_ros_cxx_standard INTERFACE)
-target_compile_features(ament_ros_cxx_standard INTERFACE cxx_std_17)
+target_compile_features(ament_ros_cxx_standard INTERFACE cxx_std_20)
 
 add_library(ament_ros_c_standard INTERFACE)
-target_compile_features(ament_ros_c_standard INTERFACE c_std_11)
+target_compile_features(ament_ros_c_standard INTERFACE c_std_17)
 
 add_library(ament_ros_defaults INTERFACE)
 target_link_libraries(ament_ros_defaults INTERFACE
-    ament_ros_cxx_standard
-    ament_ros_c_standard
+  ament_ros_cxx_standard
+  ament_ros_c_standard
 )
